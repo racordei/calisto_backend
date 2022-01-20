@@ -1,6 +1,6 @@
 {
-  "name": "perso",
-  "version": "0.0.1",
+  "name": "calisto_ts_backend",
+  "version": "1.0.0",
   "description": "Perso Portal by Thales DIS (backend)",
   "main": "index.js",
   "author": {
@@ -9,19 +9,22 @@
   },
   "license": "MIT",
   "scripts": {
-    "dev": "start-dev.bat",
-    "debug": "set NODE_ENV=development && node src/server.js",
-    "start": "node src/server.js"
+    "dev:server": "start-dev-ts.bat",
+    "build": "npx tsc"
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
     "mariadb": "^2.5.5",
-    "sequelize": "^6.12.0-beta.1",
-    "socket.io": "^4.4.0"
+    "sequelize": "^6.13.0",
+    "socket.io": "^4.4.1"
   },
   "devDependencies": {
-    "sequelize-cli": "^6.3.0"
+    "@types/express": "^4.17.13",
+    "@types/socket.io": "^3.0.2",
+    "sequelize-cli": "^6.4.1",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.4"
   }
 }
